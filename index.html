@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Interactive CSS + JS Demo</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Interactive CSS + JS (Polished Demo - Fixed)</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
-    <h1>✨ Bringing Web Pages to Life ✨</h1>
+    <h1>✨ Bringing Web Pages to Life (Fixed) ✨</h1>
     <p>Polished demo with CSS animations + JavaScript functions</p>
   </header>
 
@@ -16,33 +16,34 @@
   <section>
     <h2>Part 1: CSS Animations</h2>
     <button class="gradient-btn">Hover Me</button>
-    <div class="card">I’m an animated card 💳</div>
+    <div class="card" id="animatedCard">I’m an animated card 💳</div>
   </section>
 
   <!-- Part 2: Functions -->
   <section>
     <h2>Part 2: JavaScript Functions</h2>
-    <button id="calcBtn">Calculate Area</button>
-    <p id="result"></p>
+    <button id="calcBtn" class="action-btn">Calculate Area</button>
+    <p id="result" class="result-text"></p>
   </section>
 
   <!-- Part 3: CSS + JS Together -->
   <section>
     <h2>Part 3: Combined Effects</h2>
-    <button id="shakeBtn">Shake Card</button>
-    <button id="toggleModalBtn">Show Modal</button>
+    <button id="shakeBtn" class="action-btn">Shake Card</button>
+    <button id="toggleModalBtn" class="action-btn">Show Modal</button>
 
-    <div id="modal" class="modal hidden">
-      <div class="modal-content">
+    <!-- Modal (initially hidden via CSS; no "hidden" class here) -->
+    <div id="modal" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
+      <div class="modal-content" role="document">
         <h3>🌟 Hello!</h3>
         <p>This is a polished popup modal.</p>
-        <button id="closeModalBtn">Close</button>
+        <button id="closeModalBtn" class="action-btn">Close</button>
       </div>
     </div>
   </section>
 
   <footer>
-    <p>Made with ❤️ using CSS3 + JavaScript</p>
+    <p>Made with ❤️ using CSS3 + JavaScript — now patched and debugged</p>
   </footer>
 
   <script src="script.js"></script>
